@@ -10,16 +10,18 @@
     width: 976px;
     height: 40px;
     color: rgba(0, 0, 0, 0.60);
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     padding: 12px 0 11px 24px;
     resize: none;
-   overflow: hidden;
+    overflow: hidden;
 }
 
 .button {
+    font-family: 'Montserrat', sans-serif;
     width: 120px;
     height: 40px;
     border-radius: 20px;

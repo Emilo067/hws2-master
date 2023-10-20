@@ -1,9 +1,15 @@
 .App {
     --header_height: 60px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    gap: 37px;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-top: 107px;
+    padding-bottom: 134px;
 }
 
 .hw {
@@ -15,7 +21,6 @@
 
 .hwTitle {
     color: #000;
-    font-family: Montserrat;
     font-size: 22px;
     font-style: normal;
     font-weight: 600;

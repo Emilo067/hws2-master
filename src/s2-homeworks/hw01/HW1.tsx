@@ -13,21 +13,11 @@ import avatar from './avatar.png'
 * 5 - сделать стили в соответствии с дизайном
 * */
 
-type UserType = {
-    avatar: string,
-    name: string
-}
-
-type Message = {
-    text: string,
-    time: string
-}
-
 // нужно создать правильный тип вместо any
 export type MessageType = {
-    id: number,
-    user: UserType,
-    message: Message
+    id: number
+    user: {avatar: string, name: string}
+    message: {text: string, time: string}
 }
 
 // структуру объекта не менять
