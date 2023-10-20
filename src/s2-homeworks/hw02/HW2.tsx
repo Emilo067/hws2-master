@@ -3,8 +3,8 @@ import Affairs from './affairs/Affairs'
 import s2 from '../../s1-main/App.module.css'
 
 /*
-* 1 - описать типы AffairPriorityType, AffairType
-* 2 - указать нужный тип для defaultAffairs
+* 1 - описать типы AffairPriorityType, AffairType+
+* 2 - указать нужный тип для defaultAffairs+
 * 3 - дописать типы и логику функции filterAffairs и проверить её тестами
 * 4 - выполнить пункт 3 для функции deleteAffair
 * 5 - указать нужный тип в useState с affairs
@@ -17,7 +17,7 @@ import s2 from '../../s1-main/App.module.css'
 * */
 
 // types
-export type AffairPriorityType = 'low' | 'high' | 'middle' // need to fix any
+export type AffairPriorityType = 'low' | 'middle' | 'high' // need to fix any
 export type AffairType = {
     _id: number // need to fix any
     name: string // need to fix any
@@ -38,7 +38,7 @@ const defaultAffairs: AffairType[] = [ // need to fix any
 export const filterAffairs = (affairs: AffairType[], filter: FilterType): AffairType[] => { // need to fix any
 
     if (filter === 'all') {
-        return affairs // need to fix
+        return [...affairs] // need to fix
     } else {
         return affairs.filter(af => af.priority === filter)
     }
