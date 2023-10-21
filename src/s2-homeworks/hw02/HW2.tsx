@@ -38,7 +38,7 @@ const defaultAffairs: AffairType[] = [ // need to fix any
 export const filterAffairs = (affairs: AffairType[], filter: FilterType): AffairType[] => { // need to fix any
 
     if (filter === 'all') {
-        return [...affairs] // need to fix
+        return affairs// need to fix
     } else {
         return affairs.filter(af => af.priority === filter)
     }
