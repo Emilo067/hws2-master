@@ -1,13 +1,13 @@
 .App {
     --header_height: 60px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
     min-height: 100vh;
-    gap: 37px;
-    max-width: 1140px;
-    margin: 0 auto;
+    /*gap: 37px;*/
+    /*max-width: 1140px;*/
+    /*margin: 0 auto;*/
     padding-top: 107px;
     padding-bottom: 134px;
 }
@@ -15,7 +15,7 @@
 .hw {
     border-bottom: 1px solid #D9D9D9;
     border-top: 1px solid #D9D9D9;
-    min-width: 1200px;
+    /*min-width: 1200px;*/
     padding: 36px 70px;
 }
 
