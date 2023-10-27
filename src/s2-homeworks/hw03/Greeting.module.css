@@ -2,6 +2,8 @@
 }
 
 .inputAndButtonContainer {
+    display: flex;
+    gap: 12px;
 }
 
 .error {
@@ -29,6 +31,10 @@
 }
 
 .text {
+    color: rgba(0, 0, 0, 0.50);
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 9px;
 }
 
 .greeting {
