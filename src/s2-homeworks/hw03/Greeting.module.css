@@ -7,18 +7,40 @@
 }
 
 .error {
+    color: #C00;
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 7px;
 }
 
 .input {
+    width: 372px;
+    outline: none;
+    padding: 8px 12px;
+    margin-bottom: 7px;
 }
 
 .input:focus {
+    outline: none;
 }
 
 .errorInput {
+    width: 372px;
+    border: 1px solid #CC0000;
+    padding: 8px 12px;
+    outline: none;
 }
 
 .button {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px; /* 142.857% */
+    padding: 5px 24px;
+    border-radius: 3px;
+    background: #06C;
+    border: none;
+    height: 36px;
 }
 
 .button:focus {
@@ -28,6 +50,7 @@
 }
 
 .button:disabled {
+    opacity: 0.5;
 }
 
 .text {
