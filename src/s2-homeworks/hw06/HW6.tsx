@@ -35,19 +35,20 @@ const HW6 = () => {
                         onChangeText={setValue}
                         spanProps={{
                             id: 'hw6-editable-span',
-                            defaultText: 'enter text...',
+                            defaultText: 'Edit text',
                         }}
                     />
                 </div>
 
                 <div className={s.buttonsContainer}>
-                    <SuperButton id={'hw6-save'} onClick={save}>
+                    <SuperButton id={'hw6-save'} onClick={save} style={{width:"116px"}}>
                         Save to ls
                     </SuperButton>
                     <SuperButton
                         id={'hw6-restore'}
                         onClick={restore}
                         xType={'secondary'}
+                        style={{width:"129px"}}
                     >
                         Get from ls
                     </SuperButton>
