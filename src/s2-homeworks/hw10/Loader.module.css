@@ -1,6 +1,6 @@
 .loader {
     /*свг и/или анимация*/
-    background-image: url(Loading.svg);
+    background-image: url(loading.svg);
     width: 100px;
     height: 100px;
 }
