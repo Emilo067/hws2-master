@@ -32,7 +32,7 @@ const HW10 = () => {
         // setTimeout
         timeId = setTimeout(() => {
             dispatch(loadingAC(false));
-        }, 15000);
+        }, 1500);
     }
 
     return (
