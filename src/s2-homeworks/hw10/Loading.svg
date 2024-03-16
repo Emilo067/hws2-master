@@ -1,0 +1,17 @@
+<svg width="108.000000" height="108.000000" viewBox="0 0 108 108" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip4_63">
+			<rect id="Loading" width="108.000000" height="108.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<radialGradient id="paint_angular_4_64_0" cx="0.000000" cy="0.000000" r="1.000000" gradientUnits="userSpaceOnUse" gradientTransform="translate(54 54) rotate(0) scale(26.25 26.25)">
+			<stop stop-color="#FFFFFF" stop-opacity="0.000000"/>
+			<stop offset="1.000000" stop-color="#512DE4"/>
+		</radialGradient>
+	</defs>
+	<g clip-path="url(#clip4_63)">
+		<path id="Ellipse 4" d="M98.77 49.5C97.72 38.89 92.97 29.36 85.83 22.21C77.08 13.43 65.58 9.03 54.07 9.01C41.67 8.97 30.43 13.98 22.27 22.1C13.47 30.84 9.05 42.33 9.01 53.84C8.95 66.24 13.94 77.49 22.04 85.67C30.76 94.48 42.25 98.92 53.76 98.98C66.15 99.06 77.42 94.09 85.61 86C93.29 78.43 97.66 68.77 98.73 58.81C99 56.34 96.98 54.3 94.49 54.28C92.01 54.27 90.01 56.27 89.68 58.74C88.61 66.86 84.83 74.13 79.28 79.6C72.23 86.58 63.01 90.03 53.8 89.98C43.88 89.94 34.91 85.87 28.43 79.33C21.44 72.29 17.97 63.07 18 53.86C18.03 43.95 22.09 34.97 28.62 28.48C35.64 21.47 44.86 17.99 54.06 18C63.98 18.01 72.96 22.05 79.47 28.57C85.34 34.44 88.75 41.85 89.71 49.51C90.02 51.98 92.01 54 94.49 54L94.5 54C96.98 54 99.02 51.98 98.77 49.5Z" fill="url(#paint_angular_4_64_0)" fill-opacity="1.000000" fill-rule="evenodd"/>
+	</g>
+</svg>
