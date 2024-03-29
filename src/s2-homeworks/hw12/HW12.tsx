@@ -24,13 +24,16 @@ const HW12 = () => {
     const dispatch = useDispatch()
     const themeId = useSelector<AppStoreType, number>(state => state.theme.themeId)
 
-    const change = (event: React.MouseEvent<HTMLSelectElement>) => { // дописать функцию
-        dispatch(changeThemeId(+event.currentTarget.value))
+    const change = (event: React.ChangeEvent<HTMLSelectElement>) => { // дописать функцию
+        debugger
+        dispatch(changeThemeId(+event))
     }
 
     useEffect(() => {
         document.documentElement.dataset.theme = themeId + ''
     }, [themeId])
+
+    console.log(themeId)
 
     return (
         <div id={'hw12'}>
@@ -43,7 +46,7 @@ const HW12 = () => {
                     id={'hw12-select-theme'}
                     className={s.select}
                     options={themes}
-                    onClick={(e)=>change(e)}
+                    onChangeOption={change}
                     // сделать переключение тем
                 />
             </div>
