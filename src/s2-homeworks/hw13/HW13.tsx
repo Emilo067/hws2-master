@@ -36,7 +36,7 @@ const HW13 = () => {
             .post(url, {success: x})
             .then((res) => {
                 console.log(res)
-                setCode('Код 200!')
+                setCode(res.data.errorText)
                 setText(res.data.info)
                 setImage(success200)
                 setInfo('')
@@ -47,11 +47,11 @@ const HW13 = () => {
                 // дописать
                 console.log(e)
                 if(e.response.status === 500) {
-                    setCode('Код 500!')
+                    setCode(e.response.data.errorText)
                     setText(e.response.data.info)
                    setImage(error500)
                 } else if (e.response.status === 400) {
-                    setCode('Код 400!')
+                    setCode(e.response.data.errorText)
                     setText(e.response.data.info)
                     setImage(error400)
                 } else {
