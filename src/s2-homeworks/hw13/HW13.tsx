@@ -37,6 +37,7 @@ const HW13 = () => {
             .then((res) => {
                 console.log(res)
                 setCode('Код 200!')
+                setText(res.data.errorText)
                 setImage(success200)
                 setInfo('')
                 // дописать
@@ -44,13 +45,17 @@ const HW13 = () => {
             })
             .catch((e) => {
                 // дописать
+                console.log(e)
                 if(e.response.status === 500) {
                     setCode('Код 500!')
+                    setText(e.response.data.errorText)
                    setImage(error500)
                 } else if (e.response.status === 400) {
                     setCode('Код 400!')
+                    setText(e.response.data.errorText)
                     setImage(error400)
                 } else {
+                    setText(e.message)
                     setImage(errorUnknown)
                 }
                 setInfo('')
