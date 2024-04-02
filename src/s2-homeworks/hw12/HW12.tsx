@@ -25,7 +25,6 @@ const HW12 = () => {
     const themeId = useSelector<AppStoreType, number>(state => state.theme.themeId)
 
     const change = (event: React.ChangeEvent<HTMLSelectElement>) => { // дописать функцию
-        debugger
         dispatch(changeThemeId(+event))
     }
 
