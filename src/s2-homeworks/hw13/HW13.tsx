@@ -35,8 +35,7 @@ const HW13 = () => {
         axios
             .post(url, {success: x})
             .then((res) => {
-                console.log(res)
-                setCode(res.data.errorText)
+                setCode('200')
                 setText(res.data.info)
                 setImage(success200)
                 setInfo('')
@@ -47,18 +46,17 @@ const HW13 = () => {
                 // дописать
                 console.log(e)
                 if(e.response.status === 500) {
-                    setCode(e.response.data.errorText)
+                    setCode('500')
                     setText(e.response.data.info)
                    setImage(error500)
                 } else if (e.response.status === 400) {
-                    setCode(e.response.data.errorText)
+                    setCode('400')
                     setText(e.response.data.info)
                     setImage(error400)
                 } else {
-                    setText('Error')
+                    setInfo('Error')
                     setImage(errorUnknown)
                 }
-                setInfo('')
             })
     }
 
