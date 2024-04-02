@@ -36,10 +36,10 @@ const HW13 = () => {
             .post(url, {success: x})
             .then((res) => {
                 console.log(res)
-                setCode('200')
+                setCode('Код 200!')
                 setText(res.data.errorText)
+                setInfo(res.data.info)
                 setImage(success200)
-                setInfo('')
                 // дописать
 
             })
@@ -47,17 +47,19 @@ const HW13 = () => {
                 // дописать
                 console.log(e)
                 if (e.response.status === 500) {
-                    setCode('500')
+                    setCode('Ошибка 500!')
                     setText(e.response.data.errorText)
+                    setInfo(e.response.data.info)
                     setImage(error500)
-                    setInfo('')
                 } else if (e.response.status === 400) {
-                    setCode('400')
+                    setCode('Ошибка 400!')
                     setText(e.response.data.errorText)
+                    setInfo(e.response.data.info)
                     setImage(error400)
-                    setInfo('')
                 } else {
-                    setInfo('Error')
+                    setCode('Error!')
+                    setText(e.message)
+                    setInfo(e.name)
                     setImage(errorUnknown)
                 }
             })
