@@ -54,9 +54,10 @@ const HW13 = () => {
                     setText(e.response.data.info)
                     setImage(error400)
                 } else {
-                    setInfo('Error')
+                    setText('Error')
                     setImage(errorUnknown)
                 }
+                setInfo('')
             })
     }
 
