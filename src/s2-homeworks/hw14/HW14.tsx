@@ -55,7 +55,7 @@ const HW14 = () => {
             sendQuery(value)
         // добавить/заменить значение в квери урла
         // setSearchParams(
-            setSearchParams(value)
+            setSearchParams({find: value})
         //
     }
 
