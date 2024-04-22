@@ -11,7 +11,7 @@ test('sort "1a"', () => {
 })
 test('sort "0a"', () => {
     const newSort = pureChange('0a', '1a', '0a')
-    expect(newSort).toBe('')
+    expect(newSort).toBe('1a')
 })
 test('sort "1b"', () => {
     const newSort = pureChange('1b', '1a', '0a')

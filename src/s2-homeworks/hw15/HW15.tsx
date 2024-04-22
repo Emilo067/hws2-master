@@ -27,6 +27,17 @@ type ParamsType = {
     count: number
 }
 
+// const getTechs = (params: ParamsType) => {
+//     return axios
+//         .get<{ techs: TechType[], totalCount: number }>(
+//             'https://samurai.it-incubator.io/api/3.0/homework/test3',
+//             {params}
+//         )
+//         .catch((e) => {
+//             alert(e.response?.data?.errorText || e.message)
+//         })
+// }
+
 const getTechs = (params: ParamsType) => {
     return axios
         .get<{ techs: TechType[], totalCount: number }>(
@@ -50,12 +61,13 @@ const HW15 = () => {
     const sendQuery = (params: any) => {
         setLoading(true)
         getTechs(params)
-            .then((res) => {
+            .then((res: any) => {
                 // делает студент
-
                 // сохранить пришедшие данные
-
+                setTotalCount(res.data.totalCount)
+                setTechs(res.data.techs)
                 //
+                setLoading(false)
             })
     }
 
@@ -64,10 +76,12 @@ const HW15 = () => {
 
         // setPage(
         // setCount(
-
         // sendQuery(
         // setSearchParams(
-
+        setPage(newPage)
+        setCount(newCount)
+        sendQuery({page: newPage, count: newCount})
+        setSearchParams({page: String(newPage), count: String(newCount)})
         //
     }
 
@@ -76,10 +90,13 @@ const HW15 = () => {
 
         // setSort(
         // setPage(1) // при сортировке сбрасывать на 1 страницу
+        setSort(newSort)
+        setPage(1)
 
         // sendQuery(
         // setSearchParams(
-
+        sendQuery({page: 1, count})
+        setSearchParams({page: "1", count: String(count)})
         //
     }
 
